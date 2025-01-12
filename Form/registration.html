@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>Registration Form</title>
+<body bgcolor="orange">
+    <h1>FORM USING HTML TAGS</h1>
+        <form action="formhandler.php" method="get">
+            <table cellpadding="7">
+                <tr>
+                    <td><label for="fname"><b>First Name: </b></label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td>(max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label for="lname"><b>Last Name: </b></label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                    <td>(max 30 characters a-z and A-Z)</td>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="dob"><b>Date of Birth: </b></label>
+                    </td>
+                    <td colspan="2">
+                        <input type="date" id="dob" name="dob">                        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="email"><b>Email ID: </b></label></td>
+                    <td><input type="text" id="email" name="email"></td>
+                    <td>(max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label for="phone"><b>Mobile Number: </b></label></td>
+                    <td><input type="text" id="phone" name="phone"></td>
+                    <td>(10 digit number)</td>
+                </tr>
+                <tr>
+                    <td><b>Gender: </b></td>
+                    <td>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="Address"><b>Address: </b></label></td>
+                    <td colspan="2"><textarea id="address" name="address" rows="5" cols="40"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="city"><b>City: </b></label></td>
+                    <td><input type="text" id="city" name="city"></td>
+                    <td>(max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label for="pin"><b>PIN Code: </b></label></td>
+                    <td><input type="text" id="pin" name="pin"></td>
+                    <td>(6 digit number)</td>
+                </tr>
+                <tr>
+                    <td><label for="state"><b>State: </b></label></td>
+                    <td><input type="text" id="state" name="state"></td>
+                    <td>(max 30 characters a-z and A-Z)</td>
+                </tr>
+                <tr>
+                    <td><label for="country"><b>Country: </b></label></td>
+                    <td><input type="text" id="country" name="country" value="India"></td>
+                </tr>
+                <tr>
+                    <td><b>Qualifications: </b></td>
+                    <td colspan="2">
+                        <br>
+                        <label for="qualif">Highest Level of Education</label>
+                        <select name="qualif" id="qualif">
+                            <option value="null">--select--</option>
+                            <option value="x">Class X</option>
+                            <option value="xii">Class XII</option>
+                            <option value="ug">Undergraduate</option>
+                            <option value="m">Masters</option>
+                        </select>
+                        <br><br>
+                        <label for="per">Percentage</label>
+                        <input type="text" name="per" id="per">                    
+                        <br><br>
+                        <label for="yr">Year of Passing</label>
+                        <input type="text" name="yr" id="yr">
+                    </td>
+                </tr>
+                <tr>
+                <td><b>Hobbies: </b></td>
+                    <td colspan="2">
+                        <input type="checkbox" id="Singing" name="Singing">
+                        <label for="Singing">Singing</label>
+                        <input type="checkbox" id="Dancing" name="Dancing">
+                        <label for="Dancing">Dancing</label>
+                        <input type="checkbox" id="Drawing" name="Drawing">
+                        <label for="Drawing">Drawing</label>
+                        <input type="checkbox" id="Sketching" name="Sketching">
+                        <label for="Sketching">Sketching</label><br>
+                        <input type="checkbox" id="other" name="other">
+                        <label for="other">Others</label>
+                        <input type="text" id="othertext" name="othertext">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><b>Courses Applied: </b></td>
+                    <td>
+                        <input type="radio" id="bca" name="gender">
+                        <label for="bca">BCA</label>
+                        <input type="radio" id="bcom" name="gender">
+                        <label for="bcom">B.Com</label>
+                        <input type="radio" id="bsc" name="gender">
+                        <label for="bsc">B.Sc</label>
+                        <input type="radio" id="ba" name="gender">
+                        <label for="ba">B.A</label>
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="submit" name="sumbit">
+            <input type="reset" id="reset" name="reset">
+        </form>
+</body>
+</html>
